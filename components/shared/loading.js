@@ -24,7 +24,7 @@ class Loading extends React.Component {
       <div>
         <div ref={this.overlayRef} id="overlay" onClick={hide}>
           <div id="container">
-            <img src="https://i.imgur.com/7UXabrK.gif" />
+            <img src="https://media.giphy.com/media/LLd6Ma5vQtXyw/giphy.gif" />
           </div>
         </div>
 
@@ -38,13 +38,13 @@ class Loading extends React.Component {
               left: 0;
               right: 0;
               bottom: 0;
-              background-color: rgba(196, 196, 196, 0.5);
+              background-color: rgba(196, 196, 196, 0.3);
               z-index: 100;
             }
             #container{
               position: absolute;
               top: 50%;
-              left: 50%;
+              left: 51%;
               font-size: 50px;
               color: white;
               transform: translate(-50%,-50%);

@@ -2,14 +2,11 @@ class Button extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={this.props.action} className="button button2">
+        <button onClick={this.props.action} className={`button ${this.props.type}`}>
           {this.props.title}
         </button>
         <style jsx>{`
           .button {
-            background-color: #008CBA;
-            color: #e6ecf0;
-            border: 2px solid #008CBA;
             padding: 16px 32px;
             text-align: center;
             text-decoration: none;
@@ -20,9 +17,23 @@ class Button extends React.Component {
             transition-duration: 0.4s;
             cursor: pointer;
           }
-          .button:hover {
-            background-color: #e6ecf0;
-            color: black;
+          .button1 {
+            background-color: #00aced;
+            color: #e6ecf0;
+            border: 2px solid #00aced;
+          }
+          .button1:hover {
+            background-color: #f5f8fa;
+            color: #14171a;
+          }
+          .button2 {
+            background-color: #aab8c2;
+            color: #f5f8fa;
+            border: 2px solid #aab8c2;
+          }
+          .button2:hover {
+            background-color: #f5f8fa;
+            color: #14171a;
           }
         `}</style>
       </div>

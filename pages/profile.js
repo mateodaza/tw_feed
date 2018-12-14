@@ -1,20 +1,24 @@
-import UserActions from '../actions/user_actions'
+import ProfileView from '../components/profile/profile'
+import Layout from '../components/shared/layout'
+import Loading from '../components/shared/loading'
 
 class Profile extends React.Component {
-  componentDidMount(){
-    UserActions.getProfile().then((resp)=>{
-      console.log("RESPONSE 1: ", resp)
-    })
-    UserActions.getTweets().then((resp)=>{
-      console.log("RESPONSE 2: ", resp)
-    })
+  constructor(props) {
+    super(props);
+    this.state={
+      loading: true
+    }
+  }
+  componentDidMount() {
+    this.setState({loading: false})
   }
 
   render() {
     return (
-      <div>
-        <h3>HAI</h3>
-      </div>
+      <Layout>
+        <Loading show={this.state.loading} />
+        <ProfileView />
+      </Layout>
     );
   }
 }

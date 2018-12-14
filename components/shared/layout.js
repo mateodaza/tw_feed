@@ -2,29 +2,34 @@ import Head from '../head'
 
 const layoutStyle = {
   width: '100vw',
-  height: '100vh',
-  margin: 0,
-  padding: 0,
+  height: '100%'
 }
 
 const Layout = (props) => (
   <div style={layoutStyle}>
     <div className='container'>
-      <h3>Twitter Feed</h3>
+      <h1>Twitter Feed</h1>
       {props.children}
     </div>
     <style jsx global>{`
       body {
         font-family: 'Helvetica Neue', 'Montserrat', Helvetica, sans-serif;
-        background: #e6ecf0;
+        font-color: #14171a;
+        background: #e1e8ed;
       }
       a:hover {
         text-decoration: none;
       }
       .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin: auto;
-        width: 60%;
+        padding: 2.5% 0;
+        height: 88vh;
+        width: 50%;
         text-align: center;
+        background: #f5f8fa;
       }
     `}</style>
   </div>
