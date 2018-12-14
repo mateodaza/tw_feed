@@ -1,18 +1,15 @@
 import Head from '../head'
 
-const layoutStyle = {
-  width: '100vw',
-  height: '100%'
-}
-
 const Layout = (props) => (
-  <div style={layoutStyle}>
-    <div className='container'>
-      <div className='title'>
-        <h1>Twitter Feed</h1>
-        <img src='http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png' />
+  <div>
+    <div className='layout'>
+      <div className='container'>
+        <div className='title'>
+          <h1>Twitter Feed</h1>
+          <img src='http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png' />
+        </div>
+        {props.children}
       </div>
-      {props.children}
     </div>
     <style jsx global>{`
       body {
@@ -27,14 +24,28 @@ const Layout = (props) => (
       a:hover {
         text-decoration: none;
       }
+      img {
+        object-fit: cover;
+        width: 64px;
+        height: 64px;
+      }
+      .layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+      }
       .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: auto;
+        margin: 2.5% auto;
         padding: 2.5% 0;
-        height: 88vh;
-        width: 50%;
+        height: auto;
+        min-height: 50vh;
+        width: auto;
+        min-width: 50vw;
         text-align: center;
         background: white;
       }
@@ -43,20 +54,10 @@ const Layout = (props) => (
         display: flex;
         flex-direction: row;
         justify-content: center;
+        padding: 0 2.5%;
       }
       .title img {
         margin: 1% 0 0 0;
-      }
-      img {
-        object-fit: cover;
-        width: 64px;
-        height: 64px;
-      }
-      @media screen and (max-width: 600px) {
-        .container {
-          width: 90%;
-
-        }
       }
     `}</style>
   </div>

@@ -23,7 +23,7 @@ class Landing extends React.Component {
         <Loading show={this.state.loading} />
         <Button title='start!' action={this.authorize} type='button1'/>
         <style jsx>{`
-          
+
         `}</style>
       </div>
     );

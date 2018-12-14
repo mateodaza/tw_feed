@@ -35,6 +35,11 @@ class Button extends React.Component {
             background-color: white;
             color: #14171a;
           }
+          @media screen and (max-width: 600px) {
+            .button {
+              font-size: 28px;
+            }
+          }
         `}</style>
       </div>
     );
