@@ -30,6 +30,9 @@ npm run build
 npm start
 ```
 
+### Demo
+*[Live Demo](http://dexfreight-twfeed.herokuapp.com)
+
 ## Author
 
 * [Mateo Daza](https://github.com/mateodaza)
