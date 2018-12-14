@@ -4,7 +4,7 @@ const Layout = (props) => (
   <div>
     <div className='layout'>
       <div className='container'>
-        <div className='title'>
+        <div id='title' className='title'>
           <h1>Twitter Feed</h1>
           <img src='http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png' />
         </div>
