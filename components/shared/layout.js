@@ -17,6 +17,10 @@ const Layout = (props) => (
         font-color: #14171a;
         background: #e1e8ed;
       }
+      ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; /* make scrollbar transparent */
+      }
       a:hover {
         text-decoration: none;
       }
@@ -29,7 +33,13 @@ const Layout = (props) => (
         height: 88vh;
         width: 50%;
         text-align: center;
-        background: #f5f8fa;
+        background: white;
+      }
+      @media screen and (max-width: 600px) {
+        .container {
+          width: 90%;
+
+        }
       }
     `}</style>
   </div>
