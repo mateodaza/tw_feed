@@ -34,7 +34,7 @@ npm start
 
 Build it using docker
 ```
-docker build -t tw_feed .npm start
+docker build -t tw_feed .
 ```
 Run app
 ```
