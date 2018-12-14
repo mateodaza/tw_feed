@@ -5,6 +5,8 @@ import expect from 'expect.js'
 
 import App from '../pages/index.js'
 
+// NOT WORKING, problems with dependencies
+
 describe('With Enzyme', () => {
   it('App shows "Twitter Feed" in layout title', () => {
     const app = shallow(<App />)

@@ -15,9 +15,13 @@ const express = require('express'),
       Twitter = require('twitter');
 
 var hostname = 'http://localhost:3000'
-if(process.env.NODE_ENV){
-  hostname = 'http://dexfreight-twfeed.herokuapp.com'
-}
+
+// Still have to check how to get env host and set tw redirection right
+// e.g heroku deploy
+
+// if(process.env.NODE_ENV){
+//   hostname = 'http://dexfreight-twfeed.herokuapp.com'
+// }
 
 //PASSPORT SETUP
 passport.use(new TwitterStrategy({
