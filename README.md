@@ -40,6 +40,12 @@ Run app
 ```
 docker run --rm -it -p 3000:3000 tw_feed
 ```
+### Testing
+
+Run tests with mocha
+```
+npm run test (not working but soon 😉 )
+```
 
 ### Demo
 * [Live Demo](http://dexfreight-twfeed.herokuapp.com)
