@@ -8,7 +8,10 @@ const layoutStyle = {
 const Layout = (props) => (
   <div style={layoutStyle}>
     <div className='container'>
-      <h1>Twitter Feed</h1>
+      <div className='title'>
+        <h1>Twitter Feed</h1>
+        <img src='http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png' />
+      </div>
       {props.children}
     </div>
     <style jsx global>{`
@@ -34,6 +37,20 @@ const Layout = (props) => (
         width: 50%;
         text-align: center;
         background: white;
+      }
+      .title {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .title img {
+        margin: 1% 0 0 0;
+      }
+      img {
+        object-fit: cover;
+        width: 64px;
+        height: 64px;
       }
       @media screen and (max-width: 600px) {
         .container {

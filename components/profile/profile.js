@@ -117,11 +117,6 @@ class Profile extends React.Component {
             flex-direction: row;
             justify-content: center
           }
-          img {
-            object-fit: cover;
-            width: 64px;
-            height: 64px;
-          }
           @media screen and (max-width: 600px) {
             .tweets-feed {
               padding: 0 0 0 5%;

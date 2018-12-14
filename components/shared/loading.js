@@ -43,7 +43,7 @@ class Loading extends React.Component {
             }
             #container{
               position: absolute;
-              top: 50%;
+              top: 52%;
               left: 50.5%;
               font-size: 50px;
               color: white;

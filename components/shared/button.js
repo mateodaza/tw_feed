@@ -23,16 +23,16 @@ class Button extends React.Component {
             border: 2px solid #00aced;
           }
           .button1:hover {
-            background-color: #f5f8fa;
+            background-color: white;
             color: #14171a;
           }
           .button2 {
             background-color: #aab8c2;
-            color: #f5f8fa;
+            color: white;
             border: 2px solid #aab8c2;
           }
           .button2:hover {
-            background-color: #f5f8fa;
+            background-color: white;
             color: #14171a;
           }
         `}</style>
