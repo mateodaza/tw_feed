@@ -30,6 +30,17 @@ npm run build
 npm start
 ```
 
+### Docker
+
+Build it using docker
+```
+docker build -t tw_feed .npm start
+```
+Run app
+```
+docker run --rm -it -p 3000:3000 tw_feed
+```
+
 ### Demo
 * [Live Demo](http://dexfreight-twfeed.herokuapp.com)
 
