@@ -59,6 +59,11 @@ const Layout = (props) => (
       .title img {
         margin: 1% 0 0 0;
       }
+      @media screen and (max-width: 600px) {
+        .container {
+          width: 90vw;
+        }
+      }
     `}</style>
   </div>
 )
