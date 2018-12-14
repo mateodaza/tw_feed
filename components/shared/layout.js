@@ -15,7 +15,7 @@ const Layout = (props) => (
     </div>
     <style jsx global>{`
       body {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Helvetica Neue', 'Montserrat', Helvetica, sans-serif;
         background: #e6ecf0;
       }
       a:hover {
