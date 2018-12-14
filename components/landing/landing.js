@@ -3,14 +3,14 @@ import Router from 'next/router'
 
 class Landing extends React.Component {
 
-  componentDidMount(){
-    Router.push('/connect')
+  authorize=()=> {
+    Router.push('/oauth_request')
   }
 
   render() {
     return (
       <div>
-        <Button title='login!' action=''/>
+        <Button title='login!' action={this.authorize} />
         <style jsx>{`
           
         `}</style>

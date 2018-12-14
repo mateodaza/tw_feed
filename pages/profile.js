@@ -2,8 +2,11 @@ import UserActions from '../actions/user_actions'
 
 class Profile extends React.Component {
   componentDidMount(){
-    UserActions.getTweets().then((resp)=>{
+    UserActions.getProfile().then((resp)=>{
       console.log("RESPONSE 1: ", resp)
+    })
+    UserActions.getTweets().then((resp)=>{
+      console.log("RESPONSE 2: ", resp)
     })
   }
 

@@ -2,7 +2,9 @@ class Button extends React.Component {
   render() {
     return (
       <div>
-        <button className="button button2">{this.props.title}</button>
+        <button onClick={this.props.action} className="button button2">
+          {this.props.title}
+        </button>
         <style jsx>{`
           .button {
             background-color: #008CBA;

@@ -12,8 +12,34 @@ function getTweets() {
   });
 }
 
+function getProfile() {
+  let url = `/connect`
+  return axios({
+    url: url,
+    method: 'post'
+  }).then(response => {
+    return response
+  }).catch( error => {
+    return error.response
+  });
+}
+
+function logout() {
+  let url = `/disconnect`
+  return axios({
+    url: url,
+    method: 'post'
+  }).then(response => {
+    return response
+  }).catch( error => {
+    return error.response
+  });
+}
+
 const userActions = {
-  getTweets
+  getTweets,
+  getProfile,
+  logout
 };
 
 export default userActions;

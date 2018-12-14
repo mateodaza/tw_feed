@@ -52,11 +52,20 @@ app.prepare()
     server.use(passport.initialize())
     server.use(passport.session())
     // Will redirect to the callback and respond with the requested data
-    server.get('/connect',
+    server.get('/oauth_request',
       passport.authenticate('twitter')); 
       // It will skip the "oauth_request" and directly give all info
 
-    server.get('/disconnect', function(req, res, next) {
+    server.post('/connect', function(req, res, next) {
+      if(req.session.passport){
+        var userProfile = req.session.passport.user.profile
+        res.status(200).json({ profile: userProfile });
+      }else{
+        res.status(403).json({ error: 'not allowed' });
+      }
+    });
+
+    server.post('/disconnect', function(req, res, next) {
       if(req.session.passport){
         var userId = req.session.passport.user.profile.id
         res.status(200).json({ twitterId: userId });
