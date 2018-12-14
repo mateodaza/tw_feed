@@ -31,7 +31,7 @@ npm start
 ```
 
 ### Demo
-*[Live Demo](http://dexfreight-twfeed.herokuapp.com)
+* [Live Demo](http://dexfreight-twfeed.herokuapp.com)
 
 ## Author
 
