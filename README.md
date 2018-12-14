@@ -44,7 +44,7 @@ docker run --rm -it -p 3000:3000 tw_feed
 
 Run tests with mocha
 ```
-npm run test (not working but soon 😉 )
+npm run test ( not working but soon 😉 )
 ```
 
 ### Demo
