@@ -1,6 +1,4 @@
-# Project Title
-
-dexFreight.io Test - Twitter Feed
+# dexFreight.io Test - Twitter Feed
 
 ## Getting Started
 
