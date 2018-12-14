@@ -81,10 +81,10 @@ class Profile extends React.Component {
               <Button title='go home' type='button2' action={this.goHome}/>
             </div>
           ):(
-            <div>
+            <div className='profile-content'>
               <img src={profile.photos[0].value}/>
-              <h3>Hello {profile.displayName}</h3>
-              <h4>These are your last 100 tweets!</h4>
+              <h4>Hello {profile.displayName}</h4>
+              <h6>These are your last 100 tweets!</h6>
               <div className='tweets-feed'>
               {
                 tweets.length > 0 ? (
@@ -105,10 +105,11 @@ class Profile extends React.Component {
         }
         <style jsx>{`
           .tweets-feed {
+            justify-content: center;
             overflow: auto;
             max-height: 27vh;
-            width: 90%;
-            padding: 5% 0 0 6%;
+            width: 100%;
+            padding: 5% 0 0 8%;
           }
           .buttons {
             width: 100%;
@@ -117,10 +118,18 @@ class Profile extends React.Component {
             flex-direction: row;
             justify-content: center
           }
+          .profile-content{
+            padding: 5% 0 2% 0;
+          }
+          @media screen and (max-width: 1200px) {
+            .tweets-feed {
+              padding: 0 0 0 15%;
+            }
+          }
           @media screen and (max-width: 600px) {
             .tweets-feed {
-              padding: 0 0 0 5%;
-              width: 80vw;
+              padding: 0;
+              width: 100vw;
             }
           }
         `}</style>

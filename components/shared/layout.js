@@ -2,6 +2,7 @@ import Head from '../head'
 
 const Layout = (props) => (
   <div>
+    <Head title="dexFreight Tw Feed" />
     <div className='layout'>
       <div className='container'>
         <div id='title' className='title'>
@@ -57,11 +58,13 @@ const Layout = (props) => (
         padding: 0 2.5%;
       }
       .title img {
-        margin: 1% 0 0 0;
+        margin: -1% 0 0 0;
       }
       @media screen and (max-width: 600px) {
         .container {
-          width: 90vw;
+          margin: 0;
+          height: 80vh;
+          width: 100vw;
         }
       }
     `}</style>
