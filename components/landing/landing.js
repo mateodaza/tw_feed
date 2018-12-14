@@ -1,12 +1,12 @@
+import Button from '../shared/button'
 
 class Landing extends React.Component {
   render() {
     return (
-      <div className='landing-layout'>
+      <div>
+        <Button title='login!' action=''/>
         <style jsx>{`
-          .landing-layout {
-            width: 100vw;
-          }
+          
         `}</style>
       </div>
     );
